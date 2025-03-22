@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+
+    <section>
+        <h2>Objectives</h2>
+        <ol type="I">
+            <li>Add image</li>
+            <li>Create a table</li>
+            <li>Create a form</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Image</h2>
+        <img src="https://images.pexels.com/photos/31234130/pexels-photo-31234130/free-photo-of-moody-pink-rose-in-focus-with-dark-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Rose" width="300" height="300">
+    </section>
+
+    <section>
+        <h2>Contacts</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jane Wangari</td>
+                    <td>Nairobi</td>
+                    <td>020393289338</td>
+                    <td>wangarijane@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Rahab Mariam</td>
+                    <td>Kiambu</td>
+                    <td>02083938298</td>
+                    <td>mariamrahab@outlook.com</td>
+                </tr>
+                <tr>
+                    <td>Mathew Scot</td>
+                    <td>Nyeri</td>
+                    <td>0208472388</td>
+                    <td>mwaurasct8@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Molvin Kim</td>
+                    <td>Nairobi</td>
+                    <td>0205738464847</td>
+                    <td>kimanm89@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>            
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required> Male
+                <input type="radio" id="female" name="gender" value="female" required> Female
+            </div>
+            <div>
+                <label for="field of study">field of sudy:</label>
+                <input type="checkbox" id="full-stack software development" name="field of study" value="full-stack software development"> Full-Stack Software Development
+                <input type="checkbox" id="front-end development" name="field of study" value="front-end development "> Front-End Development 
+                <input type="checkbox" id="back-end development" name="field of study" value="back-end development"> Back-End Development
+            </div>
+            <div>
+                <label for="county">County:</label>
+                <select id="county" name="county" required>
+                    <option value="">Select your county</option>
+                    <option value="nairobi">Nairobi</option>
+                    <option value="nyeri">Nyeri</option>
+                    <option value="kiambu">Kiambu</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Register</button>
+            </div>        
+        </form>
+    </section>    
+</body>
+</html>
